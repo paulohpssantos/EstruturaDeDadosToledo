@@ -22,7 +22,6 @@ public class OrdencaoInsercao {
                 
                 vetor[j+1] = vetor[j];
                 
-                
             }
             vetor[j+1] = chave;
         }
