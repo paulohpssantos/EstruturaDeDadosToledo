@@ -8,7 +8,7 @@ public class OrdenacaoSelecao {
     
     public static void main(String[] args) {
         
-        int[] vetor = {30,20,10,40};
+        int[] vetor = {45,20,33,40,50,2,15,88,8};
         
         for (int i = 0; i < vetor.length - 1; i++) {
             int posMenor = i;
@@ -26,9 +26,13 @@ public class OrdenacaoSelecao {
             }
             
         }
+        String msg = "";
         for(int i = 0; i < vetor.length; i++){
-            System.out.println("vetor["+i+"] = "+vetor[i]);
-        }    
+            msg += vetor[i];
+            if(i < vetor.length - 1)
+                msg+= ",";
+        }
+        System.out.println(msg);
         
         
     }
